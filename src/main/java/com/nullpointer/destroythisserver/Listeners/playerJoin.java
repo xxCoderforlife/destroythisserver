@@ -1,6 +1,7 @@
 package com.nullpointer.destroythisserver.Listeners;
 
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
@@ -11,6 +12,7 @@ public class playerJoin implements Listener{
 
     Team1 t1 = new Team1();
     Team2 t2 = new Team2();
+    @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e){
         Player p = (Player) e.getPlayer();
         p.sendMessage("test");

@@ -9,7 +9,9 @@ import com.nullpointer.destroythisserver.Listeners.playerLeave;
 public class Main extends JavaPlugin{
 
     public void onEnable (){
-        registerListeners();
+        this.getServer().getPluginManager().registerEvents(new playerJoin(), this);
+
+        //registerListeners();
     }
 
     public void onDisable (){
@@ -17,7 +19,6 @@ public class Main extends JavaPlugin{
     }
 
     private void registerListeners(){
-        getServer().getPluginManager().registerEvents(new playerJoin(), this);
         getServer().getPluginManager().registerEvents(new playerLeave(), this);
         getServer().getPluginManager().registerEvents(new countBlockBreak(), this);
     }
