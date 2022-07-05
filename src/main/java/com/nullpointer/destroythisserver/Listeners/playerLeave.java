@@ -14,10 +14,10 @@ public class playerLeave implements Listener{
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent e){
         Player p = e.getPlayer();
-        if(t1.getTeam1().contains(p)){
+        if(t1.getTeam1().containsKey(p)){
             t1.removePlayer(p);
         }
-        if(t2.getTeam2().contains(p)){
+        if(t2.getTeam2().containsKey(p)){
             t2.removePlayer(p);
         }
         

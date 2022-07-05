@@ -4,3 +4,12 @@ author: xxCoderforlife
 prefix: DTS
 api-version: 1.13
 main: com.nullpointer.destroythisserver.Main
+
+commands:
+  destroythisserver:
+    permission: destroythisserver.main
+    description: Root Command For DestroyThisServer.
+    usage: /dts
+    aliases: [ dts ]
+permissions:
+  

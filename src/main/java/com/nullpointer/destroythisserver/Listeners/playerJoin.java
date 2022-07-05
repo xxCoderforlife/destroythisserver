@@ -15,7 +15,6 @@ public class playerJoin implements Listener{
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e){
         Player p = (Player) e.getPlayer();
-        p.sendMessage("test");
         int allTeams = t1.getSize() + t2.getSize();
         if(allTeams == 0){
             t1.addPlayer(p);
