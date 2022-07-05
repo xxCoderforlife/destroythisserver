@@ -9,7 +9,7 @@ public class countBlockBreak implements Listener{
 
     public void onBlockBreak(BlockBreakEvent e) {
         Player p = e.getPlayer();
-        
+        p.getScoreboard();
         
     }
 }

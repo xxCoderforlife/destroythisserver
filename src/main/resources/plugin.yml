@@ -3,4 +3,4 @@ version: 0.0.1-DEV
 author: xxCoderforlife
 prefix: DTS
 api-version: 1.13
-main: com.nullpointerexception.destroythisserver.Main
+main: com.nullpointer.destroythisserver.Main
